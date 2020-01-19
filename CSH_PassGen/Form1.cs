@@ -40,11 +40,27 @@ namespace CSH_PassGen
             {
                 label2.Text = "MOLIMO ODABERITE CHECKBOX";
             }
+            if(checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
+            {
+                string slova = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxy";
+                Random rnd = new Random();
+                int size = trackBar1.Value;
+                char[] niz = new char[size];
+                for(int i = 0; i<size; i++)
+                {
+                    niz[i] = slova[rnd.Next(slova.Length)];
+                }
+                string zaporka = String.Join("", niz.Select(p => p.ToString()).ToArray());
+                label2.Text = zaporka;
+                label4.Visible = true;
+                button2.Visible = true;
+                
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
