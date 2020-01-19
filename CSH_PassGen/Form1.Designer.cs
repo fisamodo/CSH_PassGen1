@@ -115,6 +115,7 @@
             this.label3.Size = new System.Drawing.Size(118, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Duljina Zaporke";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
