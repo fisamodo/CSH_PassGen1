@@ -56,6 +56,21 @@ namespace CSH_PassGen
                 button2.Visible = true;
                 
             }
+            if(checkBox1.Checked && !checkBox2.Checked && checkBox3.Checked)
+            {
+                string slovaSimboli = "!#$%&/()=?*_;:<>+-ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxy";
+                Random rnd = new Random();
+                int size = trackBar1.Value;
+                char[] niz = new char[size];
+                for (int i = 0; i < size; i++)
+                {
+                    niz[i] = slovaSimboli[rnd.Next(slovaSimboli.Length)];
+                }
+                string zaporka = String.Join("", niz.Select(p => p.ToString()).ToArray());
+                label2.Text = zaporka;
+                label4.Visible = true;
+                button2.Visible = true;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
