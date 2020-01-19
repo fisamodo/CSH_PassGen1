@@ -40,7 +40,24 @@ namespace CSH_PassGen
             {
                 label2.Text = "MOLIMO ODABERITE CHECKBOX";
             }
-            if(checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
+            if (checkBox1.Checked && checkBox2.Checked && checkBox3.Checked)
+            {
+                int randomNumber;
+                int size = trackBar1.Value;
+                char[] niz = new char[size];
+                Random rnd = new Random();
+
+                for(int i = 0; i < size; i++)
+                {
+                    randomNumber = rnd.Next(33, 126);
+                    niz[i] = (char)randomNumber;
+                }
+                string zaporka = String.Join("", niz.Select(p => p.ToString()).ToArray());
+                label2.Text = zaporka;
+                label4.Visible = true;
+                button2.Visible = true;
+            }
+                if (checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
             {
                 string slova = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxy";
                 Random rnd = new Random();
@@ -86,9 +103,56 @@ namespace CSH_PassGen
                 label4.Visible = true;
                 button2.Visible = true;
             }
-        }
+            if(!checkBox1.Checked && checkBox2.Checked && !checkBox3.Checked)
+            {
+                string brojevi = "1234567890";
+                Random rnd = new Random();
+                int size = trackBar1.Value;
+                char[] niz = new char[size];
+                for (int i = 0; i < size; i++)
+                {
+                    niz[i] = brojevi[rnd.Next(brojevi.Length)];
+                }
+                string zaporka = String.Join("", niz.Select(p => p.ToString()).ToArray());
+                label2.Text = zaporka;
+                label4.Visible = true;
+                button2.Visible = true;
+            }
+            if (!checkBox1.Checked && !checkBox2.Checked && checkBox3.Checked)
+            {
+                int randomNumber;
+                int size = trackBar1.Value;
+                char[] niz = new char[size];
+                Random rnd = new Random();
 
-        private void label2_Click(object sender, EventArgs e)
+                for (int i = 0; i < size; i++)
+                {
+                    randomNumber = rnd.Next(33, 47);
+                    niz[i] = (char)randomNumber;
+                }
+                string zaporka = String.Join("", niz.Select(p => p.ToString()).ToArray());
+                label2.Text = zaporka;
+                label4.Visible = true;
+                button2.Visible = true;
+            }
+            if (checkBox1.Checked && checkBox2.Checked && !checkBox3.Checked)
+            {
+                string slovaBrojevi = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxy0123456789";
+                Random rnd = new Random();
+                int size = trackBar1.Value;
+                char[] niz = new char[size];
+                for (int i = 0; i < size; i++)
+                {
+                    niz[i] = slovaBrojevi[rnd.Next(slovaBrojevi.Length)];
+                }
+                string zaporka = String.Join("", niz.Select(p => p.ToString()).ToArray());
+                label2.Text = zaporka;
+                label4.Visible = true;
+                button2.Visible = true;
+            }
+            }
+
+            private void label2_Click(object sender, EventArgs e)
         {
             
         }
