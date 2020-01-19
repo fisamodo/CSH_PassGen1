@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -155,6 +156,29 @@ namespace CSH_PassGen
             private void label2_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (FileStream fs = File.Create(textBox1.Text))
+            {
+
+                Byte[] title = new UTF8Encoding(true).GetBytes(label2.Text);
+                fs.Write(title, 0, title.Length);
+
+            }
+            System.Windows.Forms.MessageBox.Show("LOZINKA USPJEŠNO SPREMLJENA!");
+            Application.Exit();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
