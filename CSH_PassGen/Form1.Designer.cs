@@ -145,6 +145,7 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Spremi lozinku";
             this.label4.Visible = false;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox1
             // 
@@ -154,6 +155,7 @@
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "C:\\Users\\Korisnik\\Desktop\\";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Visible = false;
             // 
             // label5
             // 
@@ -162,6 +164,8 @@
             this.label5.Size = new System.Drawing.Size(169, 23);
             this.label5.TabIndex = 11;
             this.label5.Text = "Putanja sa imenom file-a";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.Visible = false;
             // 
             // Form1
             // 

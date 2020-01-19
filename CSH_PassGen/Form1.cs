@@ -57,6 +57,8 @@ namespace CSH_PassGen
                 label2.Text = zaporka;
                 label4.Visible = true;
                 button2.Visible = true;
+                label5.Visible = true;
+                textBox1.Visible = true;
             }
                 if (checkBox1.Checked && !checkBox2.Checked && !checkBox3.Checked)
             {
@@ -72,7 +74,9 @@ namespace CSH_PassGen
                 label2.Text = zaporka;
                 label4.Visible = true;
                 button2.Visible = true;
-                
+                label5.Visible = true;
+                textBox1.Visible = true;
+
             }
             if(checkBox1.Checked && !checkBox2.Checked && checkBox3.Checked)
             {
@@ -88,6 +92,8 @@ namespace CSH_PassGen
                 label2.Text = zaporka;
                 label4.Visible = true;
                 button2.Visible = true;
+                label5.Visible = true;
+                textBox1.Visible = true;
             }
             if (!checkBox1.Checked && checkBox2.Checked && checkBox3.Checked)
             {
@@ -103,6 +109,8 @@ namespace CSH_PassGen
                 label2.Text = zaporka;
                 label4.Visible = true;
                 button2.Visible = true;
+                label5.Visible = true;
+                textBox1.Visible = true;
             }
             if(!checkBox1.Checked && checkBox2.Checked && !checkBox3.Checked)
             {
@@ -118,6 +126,8 @@ namespace CSH_PassGen
                 label2.Text = zaporka;
                 label4.Visible = true;
                 button2.Visible = true;
+                label5.Visible = true;
+                textBox1.Visible = true;
             }
             if (!checkBox1.Checked && !checkBox2.Checked && checkBox3.Checked)
             {
@@ -135,6 +145,8 @@ namespace CSH_PassGen
                 label2.Text = zaporka;
                 label4.Visible = true;
                 button2.Visible = true;
+                label5.Visible = true;
+                textBox1.Visible = true;
             }
             if (checkBox1.Checked && checkBox2.Checked && !checkBox3.Checked)
             {
@@ -149,6 +161,8 @@ namespace CSH_PassGen
                 string zaporka = String.Join("", niz.Select(p => p.ToString()).ToArray());
                 label2.Text = zaporka;
                 label4.Visible = true;
+                label5.Visible = true;
+                textBox1.Visible = true;
                 button2.Visible = true;
             }
             }
@@ -177,6 +191,16 @@ namespace CSH_PassGen
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
