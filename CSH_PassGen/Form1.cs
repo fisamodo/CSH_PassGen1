@@ -24,6 +24,12 @@ namespace CSH_PassGen
 
         private void label3_Click(object sender, EventArgs e)
         {
+            label3.Text = trackBar1.Value.ToString();
+
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
 
         }
     }
