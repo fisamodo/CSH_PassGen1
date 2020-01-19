@@ -55,21 +55,23 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 64);
+            this.label2.Location = new System.Drawing.Point(22, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 24);
+            this.label2.Size = new System.Drawing.Size(173, 79);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ovdje će se prikazati lozinka";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(71, 94);
+            this.button1.Location = new System.Drawing.Point(74, 94);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Generiraj";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox1
             // 

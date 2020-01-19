@@ -32,5 +32,19 @@ namespace CSH_PassGen
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            if(!checkBox1.Checked && !checkBox1.Checked && !checkBox3.Checked)
+            {
+                label2.Text = "MOLIMO ODABERITE CHECKBOX";
+            }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
