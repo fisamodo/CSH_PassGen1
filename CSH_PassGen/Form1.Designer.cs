@@ -156,6 +156,7 @@
             this.textBox1.Text = "C:\\Users\\Korisnik\\Desktop\\";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox1.Visible = false;
+
             // 
             // label5
             // 
